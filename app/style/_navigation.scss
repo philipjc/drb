@@ -1,0 +1,24 @@
+.navigation {
+
+  &__list {
+
+    display: flex;
+
+    &__item {
+      flex-grow: 1;
+      text-align: center;
+
+      padding: $padding;
+      background: #BFDBFF;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+      }
+
+      &:hover {
+        background: darken(#BFDBFF, 10%);
+      }
+    }
+  }
+}

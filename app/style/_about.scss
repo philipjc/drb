@@ -1,0 +1,30 @@
+.about {
+
+  background: #ECF0F1;
+  padding: $padding;
+
+  .wall {
+    font-size: 20px;  
+  }
+
+  .bullets {
+
+    display: flex;
+
+    .bullet {
+      flex-grow: 1;
+
+      .fa {
+        margin-right: 5px;
+        color: $darkblue;
+        font-size: 12px;
+        line-height: 1.5;
+      }
+
+      li {
+        margin-bottom: $margin;
+
+      }
+    }
+  }
+}

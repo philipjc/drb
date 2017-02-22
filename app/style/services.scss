@@ -1,0 +1,39 @@
+.services {
+
+  display: flex;
+
+  &__card {
+
+    padding: $padding;
+
+    flex-grow: 1;
+
+    &__title {
+
+      text-align: center;
+      background: $lightblue;
+      color: $darkblue;
+      padding: $padding;
+    }
+
+    &__info {
+      padding: $padding;
+      background: $lightgrey;
+    }
+
+    &__image {
+
+      padding: $padding;
+      width: 80%;
+      border: 1px solid #777;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__base {
+
+    }
+  }
+}

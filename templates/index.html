@@ -3,27 +3,134 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <script src="https://use.fontawesome.com/55827f0b08.js"></script>
 </head>
 <body>
   <div class="container">
+
     <div class="header">
+
       <div class="header__logo">
         <div class="logo">
           <img src="app/assets/img/2.png" alt="">
         </div>
       </div>
-      <div class="header__moto">
-        <h2>COVERING ALL ASPECTS OF PROPERTY MAINTENANCE</h2>
+
+      <div>
+        <div class="header__contact">
+          <ul class="header__contact__list">
+            <li class="header__contact__list__item phone">Tel: 01793 322911</li>
+            <li class="header__contact__list__item mobile">Mobile: 07800 738422</li>
+            <li class="header__contact__list__item email">Email: dale1966@hotmail.com</li>
+            <li class="header__contact__list__item address">Web: www.drbcontractors.co.uk</li>
+          </ul>
+        </div>
+
+        <div class="header__moto">
+          <h2>COVERING ALL ASPECTS OF PROPERTY MAINTENANCE</h2>
+        </div>
       </div>
-      <div class="header__contact">
-        <ul class="contact__list">
-          <li class="contact__list__item phone">Tel: 01793 322911</li>
-          <li class="contact__list__item mobile">Mobile: 07800 738422</li>
-          <li class="contact__list__item email">Email: dale1966@hotmail.com</li>
-          <li class="contact__list__item address">Web: www.drbcontractors.co.uk</li>
-        </ul>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__list__item"><a href="#about">ABOUT</a></li>
+        <li class="navigation__list__item"><a href="#services">SERVICES</a></li>
+        <li class="navigation__list__item"><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="about" class="container section">
+    <div class="about">
+      <p class="wall">
+        Trading since 2006, we have been offering our services to Swindon and surrounding areas.
+        We are proud to offer a professional and friendly building service.
+        Ranging from general home maintenance and repairs, fully planned home extensions,
+        or full property management and maintenance contracts. With the modern tools and know how you require,
+        for a professional finish.
+        For a free no obligation quote, and a first class service, you can get in touch through our links.
+         Either way, you can find all our contact detail right here.
+      </p>
+
+      <div class="bullets">
+        <div class="bullet">
+          <ul>
+            <li><i class="fa fa-circle"></i>KITCHEN &amp; BATHROOM REPLACEMENT</li>
+            <li><i class="fa fa-circle"></i>U.P.V.C. WINDOWS DOORS &amp; FASCIAS</li>
+            <li><i class="fa fa-circle"></i>INSURANCE REPAIR WORK</li>
+            <li><i class="fa fa-circle"></i>ALL TYPES OF ROOFING</li>
+          </ul>
+        </div>
+        <div class="bullet">
+          <ul>
+            <li><i class="fa fa-circle"></i>PREPARATION OF RENTAL PROPERTIES</li>
+            <li><i class="fa fa-circle"></i>PAINTING AND DECORATING DIVISION</li>
+            <li><i class="fa fa-circle"></i>PROPERTY REFURBISHMENT</li>
+            <li><i class="fa fa-circle"></i>PLUMBING SERVICES</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
+
+  <div id="services" class="container section">
+    <div class="services">
+      <div class="services__card">
+        <div class="services__card__title">
+          <h3>Maintenance Service</h3>
+        </div>
+        <div class="services__card__info">
+          It is inevitable after time our homes require a bit of TLC.
+          We can fix most bumps and bruises around the home, but sometimes a new item is needed.
+          We source good quility products with a manufacturers guarantee.
+          It's your option, but we can offer our professional advice.
+        </div>
+        <div class="services__card__image">
+          <img src="app/assets/img/house1.jpg" alt="">
+        </div>
+        <div class="services__card__base"></div>
+      </div>
+      <div class="services__card">
+        <div class="services__card__title">
+          <h3>Property Management Service</h3>
+        </div>
+        <div class="services__card__info">
+          Are you a Letting Agents or Property Management company?
+          We can take care of you too.
+          We apply the same working ethic across the board.
+          We have strong relationships with our customers.
+          We offer speedy quotes, and a quick but quality job turn around.
+          DRB currently works closely with:
+        </div>
+        <div class="services__card__image"></div>
+        <div class="services__card__base"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="contact container section">
+    <div class="contact__header">
+      <h1>Contact</h1>
+    </div>
+    <form action="" class="contact__form">
+      <label class="form_input" for="first_name">First Name
+        <input type="text" name="first_name" id="first_name">
+      </label>
+      <label class="form_input" for="last_name">Last Name
+        <input type="text" name="last_name" id="last_name">
+      </label>
+      <label class="form_input" for="email">Email Address
+        <input type="text" name="email" id="email">
+      </label>
+      <label class="form_input" for="comment">Commets
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+      </label>
+    </form>
+  </div>
+
 </body>
 </html>
