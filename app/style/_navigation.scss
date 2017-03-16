@@ -8,12 +8,14 @@
       flex-grow: 1;
       text-align: center;
 
-      padding: $padding;
+      // padding: $padding;
       background: #BFDBFF;
       cursor: pointer;
 
       a {
         text-decoration: none;
+        display: block;
+        padding: $padding * 3;
       }
 
       &:hover {

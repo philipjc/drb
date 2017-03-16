@@ -17,17 +17,18 @@
     }
 
     &__info {
-      padding: $padding;
+      padding: $padding * 2;
       background: $lightgrey;
     }
 
     &__image {
 
       padding: $padding;
-      width: 80%;
-      border: 1px solid #777;
+      width: 100%;
+      // border: 1px solid #777;
 
       img {
+        height: 183px;
         width: 100%;
       }
     }
