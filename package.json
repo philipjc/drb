@@ -24,5 +24,8 @@
     "webpack-core": "^0.6.9",
     "webpack-dev-server": "^1.16.2",
     "webpack-merge": "^0.15.0"
+  },
+  "dependencies": {
+    "flexboxgrid": "^6.3.1"
   }
 }

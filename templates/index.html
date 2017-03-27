@@ -3,50 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <!-- <link rel="stylesheet" href="../node_modules/flexboxgrid/"> -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
   <script src="https://use.fontawesome.com/55827f0b08.js"></script>
 </head>
 <body>
-  <div class="container">
+  <div class="">
 
     <div class="header">
 
-      <div class="header__logo">
-        <div class="logo">
-          <img src="app/assets/img/2.png" alt="">
-        </div>
+      <div class="header__contact">
+        <ul class="row header__contact__list">
+          <li class="col-lg-3 header__contact__list__item phone">Tel: 01793 322911</li>
+          <li class="col-lg-3 header__contact__list__item mobile">Mobile: 07800 738422</li>
+          <li class="col-lg-3 header__contact__list__item email">Email: dale1966@hotmail.com</li>
+          <li class="col-lg-3 header__contact__list__item address">Web: www.drbcontractors.co.uk</li>
+        </ul>
       </div>
 
-      <div>
-        <div class="header__contact">
-          <ul class="header__contact__list">
-            <li class="header__contact__list__item phone">Tel: 01793 322911</li>
-            <li class="header__contact__list__item mobile">Mobile: 07800 738422</li>
-            <li class="header__contact__list__item email">Email: dale1966@hotmail.com</li>
-            <li class="header__contact__list__item address">Web: www.drbcontractors.co.uk</li>
-          </ul>
+
+
+      <div class="row bottom-lg header__lower">
+
+        <div class="col-lg-4 logo">
+          <img src="app/assets/img/2.png" alt="">
         </div>
 
-        <div class="header__moto">
+        <div class="col-lg-8 moto">
           <h2>COVERING ALL ASPECTS OF PROPERTY MAINTENANCE</h2>
         </div>
+
       </div>
 
     </div>
   </div>
 
-  <div class="container">
+  <div class="">
     <div class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__list__item"><a href="#about">ABOUT</a></li>
-        <li class="navigation__list__item"><a href="#services">SERVICES</a></li>
-        <li class="navigation__list__item"><a href="#contact">CONTACT</a></li>
+      <ul class="row navigation__list">
+        <li class="col-lg-4 navigation__list__item"><a href="#about">ABOUT</a></li>
+        <li class="col-lg-4 navigation__list__item"><a href="#services">SERVICES</a></li>
+        <li class="col-lg-4 navigation__list__item"><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
   </div>
 
-  <div id="about" class="container section">
-    <div class="about">
-      <p class="wall">
+  <div id="about" class="row section">
+    <div class="row about">
+      <div class="col-lg-1 about__graphic">
+        <img src="app/assets/img/hammer_flat.png" alt="">
+      </div>
+      <p class="col-lg-10 wall">
         Trading since 2006, we have been offering our services to Swindon and surrounding areas.
         We are proud to offer a professional and friendly building service.
         Ranging from general home maintenance and repairs, fully planned home extensions,
@@ -55,31 +62,35 @@
         For a free no obligation quote, and a first class service, you can get in touch through our links.
          Either way, you can find all our contact detail right here.
       </p>
-
-      <div class="bullets">
-        <div class="bullet">
-          <ul>
-            <li><i class="fa fa-circle"></i>KITCHEN &amp; BATHROOM REPLACEMENT</li>
-            <li><i class="fa fa-circle"></i>U.P.V.C. WINDOWS DOORS &amp; FASCIAS</li>
-            <li><i class="fa fa-circle"></i>INSURANCE REPAIR WORK</li>
-            <li><i class="fa fa-circle"></i>ALL TYPES OF ROOFING</li>
-          </ul>
-        </div>
-        <div class="bullet">
-          <ul>
-            <li><i class="fa fa-circle"></i>PREPARATION OF RENTAL PROPERTIES</li>
-            <li><i class="fa fa-circle"></i>PAINTING AND DECORATING DIVISION</li>
-            <li><i class="fa fa-circle"></i>PROPERTY REFURBISHMENT</li>
-            <li><i class="fa fa-circle"></i>PLUMBING SERVICES</li>
-          </ul>
-        </div>
+      <div class="col-lg-1 about__graphic">
+        <img src="app/assets/img/wrench_flat.png" alt="">
       </div>
+
     </div>
   </div>
 
-  <div id="services" class="container section">
-    <div class="services">
-      <div class="services__card">
+  <div class="row bullets">
+    <div class="col-lg-6 bullet">
+      <ul class="">
+        <li class=""><i class="fa fa-circle"></i>KITCHEN &amp; BATHROOM REPLACEMENT</li>
+        <li class=""><i class="fa fa-circle"></i>U.P.V.C. WINDOWS DOORS &amp; FASCIAS</li>
+        <li class=""><i class="fa fa-circle"></i>INSURANCE REPAIR WORK</li>
+        <li class=""><i class="fa fa-circle"></i>ALL TYPES OF ROOFING</li>
+      </ul>
+    </div>
+    <div class="col-lg-6 bullet">
+      <ul class="">
+        <li class=""><i class="fa fa-circle"></i>PREPARATION OF RENTAL PROPERTIES</li>
+        <li class=""><i class="fa fa-circle"></i>PAINTING AND DECORATING DIVISION</li>
+        <li class=""><i class="fa fa-circle"></i>PROPERTY REFURBISHMENT</li>
+        <li class=""><i class="fa fa-circle"></i>PLUMBING SERVICES</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="services" class="section">
+    <div class="row services">
+      <div class="col-lg-6 services__card">
         <div class="services__card__title">
           <h3>Maintenance Service</h3>
         </div>
@@ -96,7 +107,7 @@
 
         <div class="services__card__base"></div>
       </div>
-      <div class="services__card">
+      <div class="col-lg-6 services__card">
         <div class="services__card__title">
           <h3>Property Management Service</h3>
         </div>
@@ -118,46 +129,67 @@
     </div>
   </div>
 
-  <div id="contact" class="contact container section">
+  <div id="contact" class="contact section">
     <div class="contact__header">
       <h1>Contact</h1>
     </div>
 
-    <div class="contact-main">
-      <form class="form" id="form1">
+    <div class="row contact__sections">
+      <div class="col-lg-5 contact__form section">
+        <form class="form" id="form1">
 
-        <p class="name input">
-          <input
-            name="name"
-            type="text"
-            class="validate[required,custom[onlyLetter],length[0,100]] feedback-input"
-            placeholder="Name"
-            id="name" />
-        </p>
+          <p class="name input">
+            <input
+              name="name"
+              type="text"
+              class="validate[required,custom[onlyLetter],length[0,100]] feedback-input"
+              placeholder="Name"
+              id="name" />
+          </p>
 
-        <p class="email input">
-          <input
-            name="email"
-            type="text"
-            class="validate[required,custom[email]] feedback-input"
-            id="email"
-            placeholder="Email" />
-        </p>
+          <p class="email input">
+            <input
+              name="email"
+              type="text"
+              class="validate[required,custom[email]] feedback-input"
+              id="email"
+              placeholder="Email" />
+          </p>
 
-        <p class="text input">
-          <textarea
-            name="text"
-            class="validate[required,length[6,300]] feedback-input"
-            id="comment"
-            placeholder="Comment"></textarea>
-        </p>
+          <p class="text input">
+            <textarea
+              name="text"
+              class="validate[required,length[6,300]] feedback-input"
+              id="comment"
+              placeholder="Comment"></textarea>
+          </p>
 
 
-        <div class="submit">
-          <input type="submit" value="SEND" id="button-blue"/>
-          <div class="ease"></div>
-        </div>
-      </form>
+          <div class="submit">
+            <input type="submit" value="SEND" id="button-blue"/>
+            <div class="ease"></div>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-lg-5 contact__location section">
+        map
+      </div>
+      <div class="col-lg-2 contact__social section">
+        <ul>
+          <li>facebook link</li>
+          <li>other link</li>
+          <li>other link</li>
+          <li>other link</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    Contacts and Working With
   </div>
 
 </body>

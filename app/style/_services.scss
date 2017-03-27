@@ -1,12 +1,12 @@
 .services {
 
-  display: flex;
+  // display: flex;
 
   &__card {
 
     padding: $padding;
 
-    flex-grow: 1;
+    // flex-grow: 1;
 
     &__title {
 
@@ -23,13 +23,14 @@
 
     &__image {
 
-      padding: $padding;
+      padding: $padding 0;
       width: 100%;
       // border: 1px solid #777;
 
       img {
         height: 183px;
         width: 100%;
+        height: auto;
       }
     }
 

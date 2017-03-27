@@ -1,39 +1,49 @@
 .header {
 
-  display: flex;
+  // display: flex;
   background: #ECF0F1;
   padding: $padding;
 
-  &__logo {
-    width: 20%;
-    img {
-      width: 100%;
-    }
-  }
 
   &__contact {
 
-    margin-top: 10px;
-    margin-left: 22px;
+    margin-bottom: 20px;
 
-    &__list {
-
-      display: flex;
-      flex-flow: row wrap;
-
-      &__item {
-        flex-grow: 1;
-        font-size: 18px;
-      }
-    }
+    // &__list {
+    //
+    //   display: flex;
+    //   flex-flow: row wrap;
+    //
+    //   &__item {
+    //     flex-grow: 1;
+    //     font-size: 18px;
+    //   }
+    // }
   }
 
-  &__moto {
-    color: #0f75bc;
-    font-size: 22px;
-    margin-bottom: $margin;
-    margin-top: 48px;
-    margin-left: 22px;
+  &__lower {
+
+    // display: flex;
+    //
+    // .logo {
+    //
+    //   width: 30%;
+    //
+      img {
+        width: 100%;
+      }
+    // }
+    //
+    .moto {
+      margin-bottom: 12px;
+
+    //
+    //   color: #0f75bc;
+    //   font-size: 22px;
+    //   margin-bottom: $margin;
+    //   margin-top: 60px;
+    //   margin-left: 22px;
+    }
   }
 
 }

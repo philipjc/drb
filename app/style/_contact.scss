@@ -1,16 +1,22 @@
 .contact {
-
+	padding: $padding;
   background: $lightblue;
+
+
+	&__sections {
+		display: flex;
+		
+		.section {
+			flex-grow: 1;			
+		}
+	}
 
   &__header {
 
   }
 
-  &-main {
-    width: 100%;
+  &__form {
     background-color:rgba(72,72,72,0.4);
-    width: 60%;
-    margin-left: 20%;
 
     .input {
       padding: $padding;
@@ -27,7 +33,7 @@
     	background-color:  #fbfbfb;
     	padding:  13px 13px 13px 54px;
     	// margin-bottom:  10px;
-    	width: 100%;
+    	// width: 100%;
     	-webkit-box-sizing: border-box;
     	-moz-box-sizing: border-box;
     	-ms-box-sizing: border-box;
@@ -48,10 +54,6 @@
     	color: #30aed6;
     	border: #30aed6 solid 3px;
     }
-  }
-
-  &__form {
-
   }
 }
 
