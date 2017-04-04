@@ -5,9 +5,9 @@
 
 	&__sections {
 		display: flex;
-		
+
 		.section {
-			flex-grow: 1;			
+			flex-grow: 1;
 		}
 	}
 
@@ -55,6 +55,23 @@
     	border: #30aed6 solid 3px;
     }
   }
+
+	&__social {
+		ul {
+
+			li {
+				display: block;
+				width: 100%;
+				padding: $padding;
+				border-bottom: 1px solid $mainblue;
+				cursor: pointer;
+
+				&:hover {
+					border-bottom: 2px solid $mainblue;
+				}
+			}
+		}
+	}
 }
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -65,14 +82,14 @@
 
 
 /* Icons ---------------------------------- */
-#name{
+#name {
 	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
 
-#name:focus{
+#name:focus {
 	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
 	background-size: 30px 30px;
 	background-position: 8px 5px;
@@ -80,21 +97,21 @@
 	background-repeat: no-repeat;
 }
 
-#email{
+#email {
 	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
 
-#email:focus{
+#email:focus {
 	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
 	background-size: 30px 30px;
   background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
 
-#comment{
+#comment {
 	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
@@ -113,7 +130,7 @@ input:focus, textarea:focus {
 	background-color:white;
 }
 
-#button-blue{
+#button-blue {
 	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 	float:left;
 	width: 100%;
@@ -131,7 +148,7 @@ input:focus, textarea:focus {
   font-weight:700;
 }
 
-#button-blue:hover{
+#button-blue:hover {
 	background-color: rgba(0,0,0,0);
 	color: #0493bd;
 }
@@ -151,13 +168,13 @@ input:focus, textarea:focus {
 	transition: .3s ease;
 }
 
-.submit:hover .ease{
+.submit:hover .ease {
   width:100%;
   background-color:white;
 }
 
 @media only screen and (max-width: 580px) {
-	#form-div{
+	#form-div {
 		left: 3%;
 		margin-right: 3%;
 		width: 88%;
